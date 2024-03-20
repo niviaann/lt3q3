@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Evaluation</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Grade Evaluation</h2>
+
+<div class="output">
+    <script>
+        let grade = parseFloat(prompt("Please enter the final grade:"));
+        let letterGrade;
+        let remarks;
+
+        if (grade >= 95) {
+            letterGrade = "A";
+            remarks = "OUTSTANDING";
+        } else if (grade >= 90 && grade < 95) {
+            letterGrade = "A-";
+            remarks = "OUTSTANDING";
+        } else if (grade >= 85 && grade < 90) {
+            letterGrade = "B+";
+            remarks = "EXCELLENT";
+        } else if (grade >= 80 && grade < 85) {
+            letterGrade = "B";
+            remarks = "VERY GOOD";
+        } else if (grade >= 75 && grade < 80) {
+            letterGrade = "B-";
+            remarks = "GOOD";
+        } else {
+            letterGrade = "C";
+            remarks = "FAILED";
+        }
+
+        document.writeln("<p>Final Grade: " + grade.toFixed(2) + "</p>");
+        document.writeln("<p>Letter Grade: " + letterGrade + "</p>");
+        document.writeln("<p>Remarks: " + remarks + "</p>");
+    </script>
+</div>
+
+</body>
+</html>

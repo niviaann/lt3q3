@@ -1,0 +1,22 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #cce9fe;
+      margin: 0;
+      padding: 20px;
+}
+        
+h2 {
+    color: #000a93;
+}
+        
+p {
+    color: #666;
+}
+        
+.output {
+         margin-top: 20px;
+         padding: 10px;
+         background-color: #fff;
+         border: 2px solid #000a93;
+         border-radius: 5px;
+}
